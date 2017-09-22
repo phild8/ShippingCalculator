@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="weight_of_package_banner">25sp</dimen>
+    <dimen name="weight_of_package_banner_text_view_height">50dp</dimen>
+    <dimen name="shipping_weight_input_edit_text_width">300dp</dimen>
+    <dimen name="in_ounces">15sp</dimen>
+    <dimen name="text_view_width">150dp</dimen>
+    <dimen name="text_view_height">25dp</dimen>
+    <dimen name="text_view_grid_text_size">16sp</dimen>
+</resources>
