@@ -28,7 +28,8 @@
         android:layout_width="@dimen/shipping_weight_input_edit_text_width"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="numberDecimal|text"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
         android:layout_below="@+id/weightTextView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="7dp" />

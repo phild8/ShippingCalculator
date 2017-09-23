@@ -36,34 +36,23 @@ public class MainActivity extends AppCompatActivity {
         mTotalTextView = (TextView) findViewById(R.id.totalCostTextView);
 
         mOuncesTotal.addTextChangedListener(weightWatcher);
-
-        // Default base price.
-        //mShipItem.setmBaseCost(3.0);
     }
 
     private void updateViews() {
-
-        //mOuncesTotal.setText(Integer.parseInt(mShipItem.getmOunces()).toString());
-
         mBaseTextView.setText(currency.format(mShipItem.getmBaseCost()));
         mAddedTextView.setText(currency.format(mShipItem.getmAddedCost()));
         mTotalTextView.setText(currency.format(mShipItem.getmTotalCost()));
-
     }
 
     private final TextWatcher weightWatcher = new TextWatcher() {
 
         @Override
-        public void beforeTextChanged(CharSequence text, int i, int i1, int i2) {
-        }
+        public void beforeTextChanged(CharSequence text, int i, int i1, int i2) {}
 
         @Override
-        public void onTextChanged(CharSequence text, int i, int i1, int i2) {}
-
-        @Override
-        public void afterTextChanged(Editable editable) {
+        public void onTextChanged(CharSequence text, int i, int i1, int i2) {
             try {
-                int totalOunces = Integer.parseInt(editable.toString());
+                int totalOunces = Integer.parseInt(text.toString());
 
                 mShipItem.setmOunces(totalOunces);
             } catch (NumberFormatException e){
@@ -71,6 +60,9 @@ public class MainActivity extends AppCompatActivity {
             }
             updateViews();
         }
+
+        @Override
+        public void afterTextChanged(Editable editable) {}
     };
 
 }
