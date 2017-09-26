@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Versandrechner</string>
+    <string name="weight_of_package_banner">Gewicht des Pakets</string>
+    <string name="in_ounces">(in Unzen)</string>
+    <string name="base_cost_text_view">Basiskosten:</string>
+    <string name="added_cost_text_view">Kosten hinzugefügt:</string>
+    <string name="total_shipping_cost_text_view">Gesamtkosten:</string>
+</resources>
